@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* REGRA DE ACENTUAÇÃO* */
+@import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&family=Ribeye+Marrow&family=Rubik+Spray+Paint&family=Sniglet:wght@400;800&display=swap');
+:root { 
+  --cordefundo: rgb(12, 93, 243); 
+  --cor-title: rgb(12, 51, 10); 
+  --cor-cobrita-boder: rgb(28, 80, 12); 
+  --cor-fundo-game: #5da366; 
+} 
+
+body { 
+  background-color: var(--cordefundo); 
+  font-family: sans-serif; 
+  padding: 20px; 
+} 
+
+.gamecobrita { 
+  width: 700px; 
+  height: 400px; 
+  margin: auto; 
+  background-color: var(--cor-fundo-game); 
+  border-radius: 20px; 
+  border: 8px solid var(--cor-cobrita-boder); 
+  position: relative;
+} 
+
+h1 { 
+    color: var(--cor-title); 
+    font-family: 'Ribeye Marrow', Arial, sans-serif; 
+}       
+
+.menugame {
+background-color: #10811f;
+position:absolute;
+padding: 10px;
+/*top,bottom,left,right*/
+top: 50%;
+left: 50%;
+border-radius: 9px;
+transform: translate(-50%, -50%);
+text-align: center;
+padding: 30px;
+box-shadow: 4px;
+z-index:20;
+}
+
+#btn-start {
+  background-color: #f4d03f;
+  color: rgb(7, 43, 5); 
+  padding: 10px ;
+  padding: 11px ;
+  border-radius: 100px;
+  display: block;
+  margin: 100px auto;
+  width: 300px;
+  border: 10;
+  cursor: pointer;
+  transition: background-color 1.0s;
+  font-family: 'Sniglet';
+}
+#btn-start:hover{
+    background-color: #ac9023;
+}
+canvas{
+     display: none;
+     background-color: transparent;
+}
